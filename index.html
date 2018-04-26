@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Portfolio</title>
-
+  <meta name="robots" content="noindex">
   <link rel="stylesheet" type="text/css" href="css/superslides.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -11,9 +11,11 @@
 </head>
 <body>
 
-    <div class="overlay"></div>
 
     <div id="slides">
+
+      <div class="overlay"></div>
+
       <div class="slides-container">
         <img src="img/slide1.jpg" alt="">
         <img src="img/slide2.jpeg" alt="">
@@ -23,9 +25,7 @@
       <div class="titleMessage">
         <div class="heading">
           <p class="main">Johntae Stroud</p>
-          <p class="sub">Software Developer</p>
-          <p class="sub"></p>
-
+          <p class="sub typed"></p>
 
         </div>
       </div>
@@ -37,10 +37,31 @@
 
     </div>
 
+    <div id="about" class="section">
+
+        <div class="container">
+
+          <div class="row">
+
+              <div class="col-md-5">
+                <img class="aboutImage" src="img/about.png">
+              </div>
+
+              <div class="col-md-7">
+              
+              </div>
+          
+          </div>
+
+        </div>
+
+    </div>
+
 
 
 
   <script src="js/jquery.superslides.min.js"></script>
+  <script src="js/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 

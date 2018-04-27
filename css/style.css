@@ -206,6 +206,12 @@
 
 .items li img {
   width: 100%;
+  /*smooth zoom in*/
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -transition: all 0.2s linear, 1s;
 }
 
 .items .item {
@@ -237,6 +243,12 @@
   background-color: #683200;
   position: relative;
   display: inline-block;
+
+  -webkit-transition: all 0.2s linear, 0.3s;
+  -moz-transition: all 0.2s linear, 0.3s;
+  -ms-transition: all 0.2s linear, 0.3s;
+  -o-transition: all 0.2s linear, 0.3s;
+  -transition: all 0.2s linear, 0.3s;
 }
 
 
@@ -260,8 +272,45 @@
   opacity: 1;
 }
 
+.items .openButton {
+  float: left;
+  left: -200px;
+}
 
+.items .projectLink {
+  float: right;
+  right: -200px;
+}
 
+.items .item:hover .openButton {
+  left: 0px;
+}
+
+.items .item:hover .projectLink {
+  right: 0px
+}
+
+.items .item:hover img {
+    -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -transform: scale(1.05, 1.05);
+}
+
+.items {
+  padding: 0px;
+}
+
+.copyrightSection {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 5px;
+}
+
+.copyrightSection p {
+  margin: 0;
+}
 
 
 

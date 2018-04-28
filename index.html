@@ -3,6 +3,8 @@
 <head>
   <title>Portfolio</title>
   <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="css/superslides.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -14,15 +16,41 @@
 </head>
 <body>
 
+        <!--Preloader-->
+        <div id="page">
+          <div id="phrase_box">
+          <svg width="100%" height="100%">
+            <defs>
+              <mask id="mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+                <linearGradient id="linearGradient" gradientUnits="objectBoundingBox" x2="0" y2="1">
+                  <stop stop-color="white" stop-opacity="0" offset="0%"/>
+                  <stop stop-color="white" stop-opacity="1" offset="30%"/>
+                  <stop stop-color="white" stop-opacity="1" offset="70%"/>
+                  <stop stop-color="white" stop-opacity="0" offset="100%"/>
+                </linearGradient>
+                <rect width="100%" height="100%" fill="url(#linearGradient)"/>
+              </mask>
+            </defs>
+            <g width="100%" height="100%" style="mask: url(#mask);">
+              <g id="phrases"></g>
+            </g>
+          </svg>
+          </div>
+          <div id="footer">
+            <div id="logo"></div>
+          </div>
+        </div>
+        <!--Preloader End-->
+
 
     <div id="slides">
 
       <div class="overlay"></div>
 
       <div class="slides-container">
-        <img src="img/slide1.jpg" alt="">
         <img src="img/slide2.jpeg" alt="">
-        <img src="img/slide3.jpg" alt="">
+        <img src="img/slide1.jpg" alt="">
+        <img src="img/slide3.jpeg" alt="">
       </div>
 
       <div class="titleMessage">
@@ -41,7 +69,7 @@
     </div>
 
     <nav id="navigation" class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#" style="color:#bf9664;">Home</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -171,7 +199,7 @@
 
                     <div class="squareContent">
                       <h2 class="counter">5</h2>
-                      <h3>Websites Built Since 2018</h3>
+                      <h3>Websites Since 2018</h3>
                     </div>
 
                   </div>
@@ -189,9 +217,18 @@
     <div id="contact" class="contactSection section">
       <div class="col-md-12 text-center">
           <p class="subHeading">Interested?</p>
-          <h2>I'd like to hear from you!</h2>
-          <a href="mailTo:johntae.stroud@gmail.com" class="contactButton">Contact Me</a>     
+          <h2 class="message">I'd like to hear from you.</h2>
+          <br>
       </div>
+
+      <div class="social-list">
+        <ul class="col-md-12 text-center">
+          <li class="instagram"><a href="https://www.instagram.com/talentfamer/" target="_blank"><img src="img/icons/instagram.png"></a></li>
+          <li class="github"><a href="https://github.com/johntaestroud" target="_blank"><img src="img/icons/github.png"></a></li>
+          <li class="contactMe"><a href="mailTo:johntae.stroud@gmail.com"><img src="img/icons/contact.png"></a></li>
+        </ul>  
+      </div>
+
     </div>
 
      <div id="portfolio" class="section">
@@ -208,9 +245,9 @@
 
                 <ul id="filters">
                   <li><a href="#" data-filter="*" class="current">ALL</a></li>
-                  <li><a href="#" data-filter=".nodejs">NodeJS</a></li>
                   <li><a href="#" data-filter=".angular">Angular</a></li>
-                  <li><a href="#" data-filter=".php">PHP</a></li>
+                  <li><a href="#" data-filter=".php">Coming Soon</a></li>
+                 <!--  <li><a href="#" data-filter=".php"></a></li> -->
 
 
                 </ul>
@@ -221,43 +258,19 @@
               <div class="itemsContainer">
                 <ul class="items">
                   
-                <li class="nodejs col-xs-6 col-sm-4 col-md-3 col-lg-3">
-
-                  <div class="item">
-                      
-                      <img src="img/showcase/thumbnails/code.gif">
-
-                      <div class="icons">
-
-                        <a href="img/showcase/code.gif" title="View image" class="openButton" data-fancybox data-caption="Application">
-                          <i class="fa fa-search"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projectLink">
-                          <i class="fa fa-link"></i>
-                        </a>
-
-                      </div>
-
-                      <div class="imageOverlay"></div>
-
-                    </div>
-                    
-                </li>
-
                 <li class="angular col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
-                  <div class="item">
+                  <div class="item"> <!-- Thumbnails 230x230-->
                       
-                      <img src="img/showcase/thumbnails/code.gif">
+                      <img src="img/showcase/thumbnails/bitcoin.png">
 
                       <div class="icons">
-                        
-                        <a href="img/showcase/code.gif" title="View image" class="openButton" data-fancybox data-caption="Application">
+
+                        <a href="img/showcase/bitcoin.png" title="View image" class="openButton" data-fancybox data-caption="Web application that displays the top 100 cryptocurrencies along with a bitcoin chart.">
                           <i class="fa fa-search"></i>
                         </a>
 
-                        <a href="" target="_blank" class="projectLink">
+                        <a href="https://johntaestroud.github.io/crypto/" target="_blank" class="projectLink">
                           <i class="fa fa-link"></i>
                         </a>
 
@@ -270,6 +283,30 @@
                 </li>
 
                 <li class="php col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+                  <div class="item">
+                      
+                      <img src="img/showcase/thumbnails/musiclogin.png">
+
+                      <div class="icons">
+                        
+                        <a href="img/showcase/music.png" title="View image" class="openButton" data-fancybox data-caption="Spotify clone - Coming soon">
+                          <i class="fa fa-search"></i>
+                        </a>
+
+                        <a href="#" class="projectLink">
+                          <i class="fa fa-link"></i>
+                        </a>
+
+                      </div>
+
+                      <div class="imageOverlay"></div>
+
+                    </div>
+                    
+                </li>
+
+                <!-- <li class="php col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
                   <div class="item">
                       
@@ -363,7 +400,7 @@
 
                     </div>
                     
-                </li>
+                </li> -->
 
                 </ul>
               </div>

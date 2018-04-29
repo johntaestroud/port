@@ -384,7 +384,10 @@
   top: 0;
 }
 
-
+.navbar-toggler:not(:disabled):not(.disabled) {
+  outline: none;
+  z-index: 5001;
+}
 
 /* ======================
     Preloader 
